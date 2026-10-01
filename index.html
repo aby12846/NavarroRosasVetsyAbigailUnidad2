@@ -4,102 +4,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>VetSalud | Cuidado de mascotas</title>
+
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>🐾 VetSalud</h1>
-        <p>Información para el cuidado y bienestar de tus mascotas</p>
+    <!-- ENCABEZADO -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <div class="logo">
+                <span>🐾</span>
+                <h1>VetSalud</h1>
+            </div>
+
+            <nav class="menu">
+                <a href="#inicio">Inicio</a>
+                <a href="#enfermedades">Enfermedades</a>
+                <a href="#cuidados">Cuidados</a>
+                <a href="#prevencion">Prevención</a>
+                <a href="#opiniones">Opiniones</a>
+            </nav>
+
+        </div>
     </header>
 
-    <nav>
-        <a href="#inicio">Inicio</a>
-        <a href="#enfermedades">Enfermedades</a>
-        <a href="#cuidados">Cuidados</a>
-        <a href="#prevencion">Prevención</a>
-        <a href="#opiniones">Opiniones</a>
-    </nav>
 
-    <main>
+    <!-- INICIO -->
+    <section id="inicio" class="hero">
 
-        <section id="inicio">
-            <h2>Bienvenido a VetSalud</h2>
-            <p>
-                En VetSalud encontrarás información básica sobre la salud,
-                prevención y cuidado de las mascotas.
-            </p>
-            <p>
-                Nuestro objetivo es proporcionar información sencilla que
-                ayude a los dueños a conocer mejor las necesidades de sus mascotas.
-            </p>
-        </section>
+        <div class="contenedor hero-contenido">
 
-        <section id="enfermedades">
-            <h2>Enfermedades comunes</h2>
+            <div class="hero-texto">
+                <span class="etiqueta">🐶 🐱 Cuidado y bienestar</span>
 
-            <article>
-                <h3>🐶 Enfermedades en perros</h3>
+                <h2>
+                    Cuida a quienes
+                    <span>siempre están contigo</span>
+                </h2>
+
                 <p>
-                    Conoce algunos síntomas y cuidados relacionados con
-                    enfermedades comunes en perros.
+                    Encuentra información sencilla sobre enfermedades,
+                    prevención y cuidados básicos para mantener saludables
+                    a tus mascotas.
                 </p>
-            </article>
 
-            <article>
-                <h3>🐱 Enfermedades en gatos</h3>
+                <a href="#cuidados" class="boton">
+                    Conocer cuidados
+                </a>
+            </div>
+
+            <div class="hero-animal">
+                <div class="circulo-animal">
+                    🐶
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ENFERMEDADES -->
+    <section id="enfermedades" class="seccion">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+                <span>INFORMACIÓN</span>
+                <h2>Enfermedades comunes</h2>
                 <p>
-                    Información básica sobre algunos problemas de salud
-                    frecuentes en los gatos.
+                    Conoce algunos problemas de salud que pueden presentarse
+                    en las mascotas.
                 </p>
-            </article>
-        </section>
+            </div>
 
-        <section id="cuidados">
-            <h2>Cuidados básicos</h2>
-            <ul>
-                <li>Proporcionar agua limpia.</li>
-                <li>Ofrecer una alimentación adecuada.</li>
-                <li>Mantener una buena higiene.</li>
-                <li>Realizar actividad física.</li>
-                <li>Llevar controles veterinarios.</li>
-            </ul>
-        </section>
+            <div class="tarjetas">
 
-        <section id="prevencion">
-            <h2>Prevención</h2>
+                <article class="tarjeta">
+                    <div class="icono">🐶</div>
+                    <h3>Perros</h3>
+                    <p>
+                        Información básica sobre algunos síntomas y
+                        enfermedades frecuentes en perros.
+                    </p>
+                    <a href="#">Ver información →</a>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">🐱</div>
+                    <h3>Gatos</h3>
+                    <p>
+                        Conoce algunos problemas de salud comunes y
+                        recomendaciones básicas para su cuidado.
+                    </p>
+                    <a href="#">Ver información →</a>
+                </article>
+
+                <article class="tarjeta">
+                    <div class="icono">🩺</div>
+                    <h3>Señales de alerta</h3>
+                    <p>
+                        Aprende a identificar algunos cambios que pueden
+                        indicar que una mascota necesita atención.
+                    </p>
+                    <a href="#">Ver información →</a>
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- CUIDADOS -->
+    <section id="cuidados" class="seccion seccion-verde">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+                <span>CUIDADOS</span>
+                <h2>Cuida su salud todos los días</h2>
+                <p>
+                    Algunas acciones sencillas pueden ayudar a mantener
+                    el bienestar de nuestras mascotas.
+                </p>
+            </div>
+
+            <div class="cuidados-grid">
+
+                <div class="cuidado">
+                    <div>🥗</div>
+                    <h3>Alimentación</h3>
+                    <p>
+                        Proporcionar una alimentación adecuada según las
+                        necesidades de cada mascota.
+                    </p>
+                </div>
+
+                <div class="cuidado">
+                    <div>💧</div>
+                    <h3>Agua limpia</h3>
+                    <p>
+                        Mantener agua limpia y disponible durante el día.
+                    </p>
+                </div>
+
+                <div class="cuidado">
+                    <div>🧼</div>
+                    <h3>Higiene</h3>
+                    <p>
+                        Mantener una buena higiene ayuda a prevenir
+                        diferentes problemas.
+                    </p>
+                </div>
+
+                <div class="cuidado">
+                    <div>🏃</div>
+                    <h3>Actividad física</h3>
+                    <p>
+                        El ejercicio ayuda a mantener una buena condición
+                        física y bienestar.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- PREVENCIÓN -->
+    <section id="prevencion" class="seccion">
+
+        <div class="contenedor prevencion">
+
+            <div class="prevencion-texto">
+
+                <span>PREVENCIÓN</span>
+
+                <h2>
+                    La prevención también es parte del cuidado
+                </h2>
+
+                <p>
+                    Llevar un seguimiento de la salud de nuestras mascotas
+                    puede ayudar a detectar cambios a tiempo.
+                </p>
+
+                <ul>
+                    <li>✓ Mantener sus vacunas al día.</li>
+                    <li>✓ Realizar desparasitaciones.</li>
+                    <li>✓ Mantener una buena higiene.</li>
+                    <li>✓ Observar cambios en su comportamiento.</li>
+                    <li>✓ Realizar revisiones veterinarias.</li>
+                </ul>
+
+            </div>
+
+            <div class="prevencion-imagen">
+                🩺
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- OPINIONES -->
+    <section id="opiniones" class="seccion opiniones">
+
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+                <span>COMUNIDAD</span>
+                <h2>Opiniones y experiencias</h2>
+
+                <p>
+                    Comparte experiencias y recomendaciones relacionadas
+                    con el cuidado de tus mascotas.
+                </p>
+            </div>
+
+            <div class="opinion-box">
+
+                <div class="comillas">“</div>
+
+                <p>
+                    Este espacio permitirá que los usuarios compartan
+                    consejos y experiencias sobre el cuidado de sus mascotas.
+                </p>
+
+                <button class="boton">
+                    Compartir experiencia
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AVISO -->
+    <section class="aviso">
+
+        <div class="contenedor">
+
+            <h3>🩺 Importante</h3>
+
             <p>
-                La prevención ayuda a mantener una mejor calidad de vida
-                para las mascotas.
+                La información presentada en VetSalud tiene fines educativos
+                y no sustituye la consulta, diagnóstico o tratamiento de un
+                médico veterinario.
             </p>
 
-            <ul>
-                <li>Mantener sus vacunas al día.</li>
-                <li>Realizar desparasitaciones.</li>
-                <li>Observar cambios en su comportamiento.</li>
-                <li>Consultar al veterinario cuando sea necesario.</li>
-            </ul>
-        </section>
+        </div>
 
-        <section id="opiniones">
-            <h2>Opiniones</h2>
-            <p>
-                En esta sección los usuarios podrán compartir sus
-                experiencias y recomendaciones sobre el cuidado de sus mascotas.
-            </p>
-        </section>
+    </section>
 
-    </main>
 
-    <footer>
-        <p>© 2026 VetSalud</p>
-        <p>
-            La información presentada es únicamente educativa y no sustituye
-            la atención, diagnóstico o tratamiento de un veterinario.
-        </p>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="contenedor footer-contenido">
+
+            <div>
+                <h2>🐾 VetSalud</h2>
+                <p>
+                    Información para el cuidado y bienestar de las mascotas.
+                </p>
+            </div>
+
+            <div>
+                <p>© 2026 VetSalud</p>
+                <p>Proyecto académico</p>
+            </div>
+
+        </div>
+
     </footer>
 
 </body>
 </html>
 ```
+
