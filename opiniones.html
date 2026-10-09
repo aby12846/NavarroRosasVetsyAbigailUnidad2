@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetSalud | Opiniones y Experiencias de la Comunidad</title>
+    <meta name="description" content="Espacio interactivo para compartir experiencias, consejos y opiniones sobre el cuidado de perros, gatos y otras mascotas.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="logo" aria-label="Inicio VetSalud">
+                <span>🐾</span>
+                <h1>VetSalud</h1>
+            </a>
+
+            <button class="hamburger-toggle" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="menu" id="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="enfermedades.html">Enfermedades</a>
+                <a href="cuidados.html">Cuidados</a>
+                <a href="prevencion.html">Prevención</a>
+                <a href="sintomas.html">Síntomas</a>
+                <a href="opiniones.html" class="activo">Opiniones</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HÉROE DE PÁGINA -->
+    <section class="page-hero">
+        <div class="contenedor">
+            <h1>Opiniones y Experiencias</h1>
+            <p>
+                Comparte tus vivencias y consejos sobre el cuidado de tu perro o gato. Tu experiencia ayuda a otros tutores a brindar una mejor calidad de vida a sus mascotas.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FORMULARIO DE OPINIONES -->
+    <section class="seccion">
+        <div class="contenedor">
+
+            <!-- AVISO DE ALMACENAMIENTO LOCAL -->
+            <div class="aviso-storage">
+                <span style="font-size: 22px;">ℹ️</span>
+                <div>
+                    <strong>Nota de privacidad y almacenamiento local:</strong>
+                    Las opiniones enviadas se guardan de forma local en el navegador de tu computadora (usando <code>localStorage</code>). No se envían a ningún servidor externo ni se comparten automáticamente con otros visitantes en computadoras distintas.
+                </div>
+            </div>
+
+            <!-- FORMULARIO INTERACTIVO -->
+            <form id="form-opinion" class="form-opinion" novalidate>
+                <h2 style="margin-bottom: 20px; color: #213d34; font-size: 24px; text-align: center;">
+                    ✍️ Publicar una opinión o consejo
+                </h2>
+
+                <!-- Campo Nombre -->
+                <div class="grupo-form">
+                    <label for="nombre">Tu nombre o apodo *</label>
+                    <input type="text" id="nombre" class="input-form" placeholder="Ej. Ana García" required minlength="2">
+                    <div class="mensaje-error" id="error-nombre">Por favor ingresa tu nombre.</div>
+                </div>
+
+                <!-- Campo Tipo de Mascota -->
+                <div class="grupo-form">
+                    <label for="mascota">¿Sobre qué mascota deseas opinar? *</label>
+                    <select id="mascota" class="select-form" required>
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="perro">🐶 Perro</option>
+                        <option value="gato">🐱 Gato</option>
+                        <option value="otra">🐾 Otra mascota</option>
+                    </select>
+                    <div class="mensaje-error" id="error-mascota">Por favor selecciona una categoría.</div>
+                </div>
+
+                <!-- Campo Opinión -->
+                <div class="grupo-form">
+                    <label for="opinion">Escribe tu opinión o consejo *</label>
+                    <textarea id="opinion" class="textarea-form" placeholder="Comparte tu experiencia cuidando a tu mascota, consejos de alimentación, vacunas o prevención..." required minlength="10"></textarea>
+                    <div class="mensaje-error" id="error-opinion">Escribe al menos 10 caracteres explicativos.</div>
+                </div>
+
+                <!-- Botón de envío -->
+                <div style="text-align: center; margin-top: 25px;">
+                    <button type="submit" class="boton" style="width: 100%; max-width: 300px;">
+                        Publicar opinión 🐾
+                    </button>
+                </div>
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- LISTA DE OPINIONES PUBLICADAS -->
+    <section class="seccion seccion-verde">
+        <div class="contenedor">
+
+            <div class="titulo-seccion">
+                <span>COMUNIDAD</span>
+                <h2>Experiencias compartidas</h2>
+                <p>Opiniones guardadas en tu navegador:</p>
+            </div>
+
+            <div id="mensaje-vacio" style="display: none; text-align: center; color: #687a73; padding: 30px;">
+                Aún no hay opiniones publicadas. ¡Sé el primero en compartir tu experiencia!
+            </div>
+
+            <!-- Contenedor dinámico cargado con opiniones.js -->
+            <div class="opiniones-lista" id="opiniones-lista">
+                <!-- Se llena mediante JS -->
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- AVISO EDUCATIVO -->
+    <section class="aviso">
+        <div class="contenedor">
+            <h3>🩺 Nota de la Comunidad</h3>
+            <p>
+                Las opiniones compartidas reflejan experiencias personales de tutores de mascotas. Ninguna recomendación de la comunidad sustituye la valoración médica veterinaria profesional.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+            <div class="footer-col">
+                <h2>🐾 VetSalud</h2>
+                <p>Comunidad para el aprendizaje y cuidado responsable de mascotas.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Mapa del sitio</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="enfermedades.html">Enfermedades</a></li>
+                    <li><a href="cuidados.html">Cuidados</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="sintomas.html">Síntomas</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Tu opinión importa</h3>
+                <p>Compartir tus conocimientos ayuda a otros tutores a cuidar mejor de sus animales.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contenedor">
+                <p>© 2026 VetSalud | Proyecto educativo sobre salud animal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/opiniones.js"></script>
+</body>
+</html>

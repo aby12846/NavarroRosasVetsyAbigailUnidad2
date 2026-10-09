@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetSalud | Enfermedades Comunes en Perros y Gatos</title>
+    <meta name="description" content="Información educativa sobre parvovirus, moquillo, leucemia felina, panleucopenia y otras enfermedades frecuentes en mascotas.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN -->
+    <header class="header">
+        <div class="contenedor header-contenido">
+
+            <a href="index.html" class="logo" aria-label="Inicio VetSalud">
+                <span>🐾</span>
+                <h1>VetSalud</h1>
+            </a>
+
+            <button class="hamburger-toggle" id="hamburger-btn" aria-label="Abrir menú" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="menu" id="nav-menu">
+                <a href="index.html">Inicio</a>
+                <a href="enfermedades.html" class="activo">Enfermedades</a>
+                <a href="cuidados.html">Cuidados</a>
+                <a href="prevencion.html">Prevención</a>
+                <a href="sintomas.html">Síntomas</a>
+                <a href="opiniones.html">Opiniones</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- HÉROE DE PÁGINA -->
+    <section class="page-hero">
+        <div class="contenedor">
+            <h1>Enfermedades Comunes</h1>
+            <p>
+                Aprende a reconocer las patologías más frecuentes en perros y gatos. La información oportuna te ayuda a identificar cambios a tiempo y acudir al veterinario de forma rápida.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <section class="seccion">
+        <div class="contenedor">
+
+            <!-- FILTRO DE ESPECIES -->
+            <div class="tab-contenedor">
+                <button class="tab-btn activo" data-filtro="todas">🐾 Todas las enfermedades</button>
+                <button class="tab-btn" data-filtro="perro">🐶 Enfermedades de Perros</button>
+                <button class="tab-btn" data-filtro="gato">🐱 Enfermedades de Gatos</button>
+            </div>
+
+
+            <!-- REJILLA DE ENFERMEDADES -->
+            <div class="tarjetas" id="lista-enfermedades">
+
+                <!-- PERROS 1: Parvovirus -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="perro">
+                    <span class="insignia insignia-perro">🐶 Perros</span>
+                    <h3>Parvovirus Canino</h3>
+                    <p>
+                        Enfermedad viral altamente contagiosa y grave que afecta principalmente el sistema digestivo de los cachorros.
+                    </p>
+                    <button class="btn-detalles" data-target="det-parvo" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-parvo">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Vómitos severos e ininterrumpidos.</li>
+                            <li>Diarrea líquida con olor fuerte y presencia de sangre.</li>
+                            <li>Fiebre alta, decaimiento extremo y deshidratación rápida.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacunación oportuna en cachorros a partir de las 6 semanas y refuerzos periódicos indicados por el veterinario.</p>
+                    </div>
+                </article>
+
+                <!-- PERROS 2: Moquillo -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="perro">
+                    <span class="insignia insignia-perro">🐶 Perros</span>
+                    <h3>Moquillo Canino (Distemper)</h3>
+                    <p>
+                        Infección viral multisistémica agresiva que ataca los aparatos respiratorio, digestivo y el sistema nervioso.
+                    </p>
+                    <button class="btn-detalles" data-target="det-moquillo" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-moquillo">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Fiebre, secreción nasal y ocular verdosa.</li>
+                            <li>Tos, dificultad respiratoria y falta de apetito.</li>
+                            <li>Temblores musculares, rigidez de almohadillas plantares y convulsiones.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacuna múltiple canina (séxtuple/óctuple). Evitar sacar a cachorros no vacunados a parques públicos.</p>
+                    </div>
+                </article>
+
+                <!-- PERROS 3: Rabia -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="perro">
+                    <span class="insignia insignia-perro">🐶 Perros</span>
+                    <h3>Rabia Canina</h3>
+                    <p>
+                        Enfermedad viral mortal que transmite a través de la saliva (mordeduras). Afeta el sistema nervioso central y es transmisible al ser humano.
+                    </p>
+                    <button class="btn-detalles" data-target="det-rabia" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-rabia">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Cambios drásticos de conducta (agresividad o timidez extrema).</li>
+                            <li>Salivación excesiva, dificultad para tragar agua y desorientación.</li>
+                            <li>Parálisis progresiva.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacunación antirrábica obligatoria anual a partir de los 3 meses de edad.</p>
+                    </div>
+                </article>
+
+                <!-- PERROS 4: Tos de las perreras -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="perro">
+                    <span class="insignia insignia-perro">🐶 Perros</span>
+                    <h3>Tos de las Perreras</h3>
+                    <p>
+                        Traqueobronquitis infecciosa muy contagiosa que afecta las vías respiratorias altas en lugares donde conviven varios canes.
+                    </p>
+                    <button class="btn-detalles" data-target="det-tos" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-tos">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Tos seca, fuerte y persistente (similar a un graznido).</li>
+                            <li>Arcadas o expulsión de espuma blanca tras toser.</li>
+                            <li>Estornudos y leve secreción nasal.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacuna específica contra Bordetella bronchiseptica y adecuada ventilación en espacios compartidos.</p>
+                    </div>
+                </article>
+
+                <!-- PERROS 5: Dermatitis -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="perro">
+                    <span class="insignia insignia-perro">🐶 Perros</span>
+                    <h3>Dermatitis y Afecciones Cutáneas</h3>
+                    <p>
+                        Inflamación e infección de la piel producida por alergias alimentarias, picaduras de pulga (DAPP), hongos o bacterias.
+                    </p>
+                    <button class="btn-detalles" data-target="det-dermatitis" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-dermatitis">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Rascado obsesivo, lamedura constante de patas o cuerpo.</li>
+                            <li>Enrojecimiento, pérdida de pelo local o costras.</li>
+                            <li>Mal olor en la piel o secreción en las orejas.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Desparasitación externa constante contra pulgas, baños con champú adecuado y nutrición de calidad.</p>
+                    </div>
+                </article>
+
+                <!-- GATOS 1: Leucemia Felina -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="gato">
+                    <span class="insignia insignia-gato">🐱 Gatos</span>
+                    <h3>Leucemia Felina (ViLeF)</h3>
+                    <p>
+                        Retrovirus que debilita gravemente el sistema inmunológico del gato, dejándolo expuesto a múltiples infecciones secundarias.
+                    </p>
+                    <button class="btn-detalles" data-target="det-vilef" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-vilef">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Pérdida progresiva de peso y apetito.</li>
+                            <li>Anemia (encías pálidas), fiebre intermitente y letargo.</li>
+                            <li>Infecciones recurrentes en piel, encías o vías respiratorias.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacunación específica tras prueba de descarte negativa. Mantener al gato dentro del hogar (ambiente indoor).</p>
+                    </div>
+                </article>
+
+                <!-- GATOS 2: Panleucopenia -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="gato">
+                    <span class="insignia insignia-gato">🐱 Gatos</span>
+                    <h3>Panleucopenia Felina</h3>
+                    <p>
+                        Conocida como el parvovirus felino, es una enfermedad viral sumamente contagiosa y potencialmente letal en gatitos.
+                    </p>
+                    <button class="btn-detalles" data-target="det-panleuco" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-panleuco">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Vómitos intensos y rechazo total del agua o alimento.</li>
+                            <li>Diarrea sanguinolenta y deshidratación severa.</li>
+                            <li>Fiebre alta seguida de hipotermia.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacuna triple felina aplicada en las primeras semanas de vida y refuerzos periódicos.</p>
+                    </div>
+                </article>
+
+                <!-- GATOS 3: Rinotraqueítis -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="gato">
+                    <span class="insignia insignia-gato">🐱 Gatos</span>
+                    <h3>Rinotraqueítis Felina</h3>
+                    <p>
+                        Infección del tracto respiratorio superior provocada por el herpesvirus felino, de alta prevalencia en felinos.
+                    </p>
+                    <button class="btn-detalles" data-target="det-rino" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-rino">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Estornudos constantes y dificultad para respirar.</li>
+                            <li>Secreción nasal u ocular abundante (conjuntivitis).</li>
+                            <li>Úlceras en la lengua o boca que dificultan la alimentación.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Vacunación oportuna, control del estrés y evitar cambios bruscos de temperatura.</p>
+                    </div>
+                </article>
+
+                <!-- GATOS 4: Problemas Urinarios -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="gato">
+                    <span class="insignia insignia-gato">🐱 Gatos</span>
+                    <h3>Enfermedad del Tracto Urinario (FLUTD)</h3>
+                    <p>
+                        Condición que abarca cistitis, formación de cristales o cálculos y obstrucción uretral (especialmente peligrosa en machos).
+                    </p>
+                    <button class="btn-detalles" data-target="det-flutd" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-flutd">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Esfuerzo o maullidos de dolor al intentar orinar.</li>
+                            <li>Orinar fuera de la caja de arena o en pequeñas gotas.</li>
+                            <li>Presencia de sangre en la orina (hematuria) y lamedura genital constante.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Fomentar la ingesta de agua (comida húmeda y fuentes de agua), caja de arena impecable y alimento balanceado bajo en minerales perjudiciales.</p>
+                    </div>
+                </article>
+
+                <!-- GATOS 5: Parásitos Intestinales -->
+                <article class="tarjeta tarjeta-enfermedad" data-especie="gato">
+                    <span class="insignia insignia-gato">🐱 Gatos</span>
+                    <h3>Parásitos Intestinales</h3>
+                    <p>
+                        Presencia de gusanos redondos, planos o protozoos en el sistema digestivo de felinos jóvenes y adultos.
+                    </p>
+                    <button class="btn-detalles" data-target="det-parasitos" aria-expanded="false">Ver detalles →</button>
+
+                    <div class="detalles-contenido" id="det-parasitos">
+                        <strong>Síntomas frecuentes:</strong>
+                        <ul>
+                            <li>Abdomen abultado o hinchado (muy evidente en gatitos).</li>
+                            <li>Diarreas intermitentes o heces blandas con sangre.</li>
+                            <li>Pelaje áspero, opaco y falta de crecimiento adecuado.</li>
+                        </ul>
+                        <strong>Prevención:</strong>
+                        <p>Desparasitación interna regular programada por el veterinario y limpieza diaria del arenero.</p>
+                    </div>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- AVISO EDUCATIVO -->
+    <section class="aviso">
+        <div class="contenedor">
+            <h3>🩺 Nota Profesional de Diagnóstico</h3>
+            <p>
+                Los síntomas descritos tienen únicamente un propósito informativo y orientativo. La presencia de uno o más síntomas <strong>no permite confirmar un diagnóstico por cuenta propia</strong>. La valoración médica precisa, pruebas de laboratorio y tratamiento corresponden de forma exclusiva a un médico veterinario.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="contenedor footer-contenido">
+            <div class="footer-col">
+                <h2>🐾 VetSalud</h2>
+                <p>Información clara para el bienestar, salud y prevención en mascotas.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Navegación rápida</h3>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="enfermedades.html">Enfermedades</a></li>
+                    <li><a href="cuidados.html">Cuidados</a></li>
+                    <li><a href="prevencion.html">Prevención</a></li>
+                    <li><a href="sintomas.html">Síntomas</a></li>
+                    <li><a href="opiniones.html">Opiniones</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Recuerda</h3>
+                <p>Ante cualquier sospecha de enfermedad, no esperes. Consulta de inmediato con un veterinario de confianza.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="contenedor">
+                <p>© 2026 VetSalud | Proyecto educativo sobre salud animal</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/enfermedades.js"></script>
+</body>
+</html>
